@@ -476,9 +476,9 @@ img { -webkit-user-drag: none; user-select: none; }
 .footer { background: var(--black); color: #fff; padding-top: 0; overflow: hidden; }
 .footer-top { display: grid; grid-template-columns: 1.3fr auto; gap: 40px; align-items: start; }
 .footer-cols { display: flex; gap: 48px; }
-.footer-cols .col h4 { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; color: rgba(255,255,255,0.4); text-transform: uppercase; margin: 0 0 14px; }
+.footer-cols .col h4 { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; color: rgba(255,255,255,0.62); text-transform: uppercase; margin: 0 0 14px; }
 .footer-cols .col a { display: block; font-size: 13.5px; font-weight: 600; color: rgba(255,255,255,0.82); padding: 4px 0; }
-.footer-cols .col h3.foot-col-h { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; color: rgba(255,255,255,0.4); text-transform: uppercase; margin: 0 0 14px; }
+.footer-cols .col h3.foot-col-h { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; color: rgba(255,255,255,0.62); text-transform: uppercase; margin: 0 0 14px; }
 .footer-cols .col a:hover { color: var(--red); }
 .footer-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
 .footer-ctas .btn-outline { color: #fff; border-color: rgba(255,255,255,0.28); }
@@ -497,7 +497,7 @@ img { -webkit-user-drag: none; user-select: none; }
 .cookie-bar.show { transform: none; }
 .cookie-bar p { margin: 0; font-size: 11.5px; line-height: 1.4; color: rgba(255,255,255,0.85); max-width: 900px; }
 .cookie-bar a { color: var(--gold); text-decoration: underline; text-underline-offset: 2px; }
-.cookie-bar button { flex: none; background: var(--red); color: #fff; border: none; padding: 6px 14px; border-radius: 7px; font-weight: 700; font-size: 11.5px; cursor: pointer; }
+.cookie-bar button { flex: none; background: var(--red-deep); color: #fff; border: none; padding: 6px 14px; border-radius: 7px; font-weight: 700; font-size: 11.5px; cursor: pointer; }
 @media (max-width: 560px){ .cookie-bar { flex-direction: column; align-items: stretch; text-align: left; gap: 8px; } .cookie-bar button { width: 100%; } }
 .ico-btn { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); color: rgba(255,255,255,0.8); transition: transform .3s cubic-bezier(.2,.8,.2,1), background .3s, color .3s, border-color .3s; flex: none; }
 .ico-btn svg { width: 18px; height: 18px; }
