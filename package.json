@@ -1,8 +1,0 @@
-{
-  "name": "la-liga-pava-web",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "build": "echo 'Sitio estático, no requiere build'"
-  }
-}
