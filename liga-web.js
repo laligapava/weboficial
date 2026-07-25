@@ -685,13 +685,17 @@
   function fitOneLine(el) {
     if (!el) return;
     var max = 40, min = 10;
-    el.style.fontSize = max + 'px';
     var parentWidth = el.parentElement.clientWidth;
-    var size = max;
-    while (el.scrollWidth > parentWidth && size > min) {
-      size -= 1;
-      el.style.fontSize = size + 'px';
+    el.style.fontSize = max + 'px';
+    if (el.scrollWidth <= parentWidth) return;
+    var lo = min, hi = max, best = min;
+    while (lo <= hi) {
+      var mid = Math.floor((lo + hi) / 2);
+      el.style.fontSize = mid + 'px';
+      if (el.scrollWidth <= parentWidth) { best = mid; lo = mid + 1; }
+      else { hi = mid - 1; }
     }
+    el.style.fontSize = best + 'px';
   }
   function fitSponsTitle() {
     var el = document.querySelector('.spons-expanded-head .acc-title');
